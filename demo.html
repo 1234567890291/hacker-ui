@@ -1,0 +1,87 @@
+<div class="navbar">
+  <a href="#" class="logo">Sudais Usmani</a>
+ <ul class="nav-links">
+     <li><a href="javascript:void(0)" class="center" href="#">Home</a></li>
+     <li><a href="./course/course.html">Course</a></li>
+     <li><a href="https://wa.me/message/U7FMFQ7LZQ2HC1">Contact</a></li>
+ </ul>
+ <style>
+  /* Styles for the navigation bar */
+.navbar {
+  background-color: transparent;
+  /* border-bottom: 1px solid #ddd; */
+  overflow: hidden;
+  padding: 10px;
+}
+
+/* Styles for the logo */
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Styles for the navigation links */
+.navbar .nav-links {
+  float: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .nav-links li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.navbar .nav-links li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navbar .nav-links li a:hover {
+  color: #ffffff;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255, 4, 4);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-links a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease-out;
+}
+
+.nav-links a:hover {
+  transform: scale(0.9);
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+      display: none;
+  }
+}
+
+
+
+ </style>

